@@ -1,0 +1,10 @@
+<form [formGroup]="registerForm">
+  <app-address
+    (address1Event)="address1Updated($event)"
+    (address2Event)="address2Updated($event)"
+    (cityEvent)="cityUpdated($event)"
+    (stateEvent)="stateUpdated($event)"
+    (postalCodeEvent)="postalCodeUpdated($event)"
+  >
+  </app-address>
+</form>

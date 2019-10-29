@@ -1,0 +1,53 @@
+.contentWrap {
+    clear: both;
+    align-content: center;
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    & .mainContent {
+       // max-width: 400px;
+       width:100%;
+       text-align: center;
+        display: block;
+        & .formWrap {
+            padding-left: 10px;
+            & .formSection {
+                margin-left: 1em;
+                border-left: 1px dashed #eee;
+                margin-bottom: 20px;
+                & p {
+                    width: 100%;
+                    padding: 5px 0;
+                    border-bottom: 1px dashed #eee;
+                }
+                & input, textarea, select {
+                    font-size: 1em;
+                    font-family: Arial, Tahoma, Verdana, sans-serif;
+                }
+                & select {
+                    font-size: 1em;
+                    font-family: Arial, Tahoma, Verdana, sans-serif;
+                    border:2px solid #fc3;
+                }
+                & .submit {
+	                text-decoration: none;
+	                font-family: Arial, Tahoma, Verdana, sans-serif;
+	                margin: 1px 10px 0 0;
+	                padding: 2px 6px;
+	                overflow: visible;
+	                border: 1px solid #369;
+	                font-size: 1em;
+	                font-weight:bold;
+	                cursor: pointer;
+	                width: auto;
+	                -moz-border-radius: 15px;
+	                -webkit-border-radius: 15px;
+	                background: #fc3;
+	                background: -moz-linear-gradient(100% 100% 90deg, #fc3, #feb);
+	                background: -webkit-gradient(linear, 0% 0, 0% 100%, from(#feb), to(#fc3));
+                }
+            }
+        }
+    }
+}

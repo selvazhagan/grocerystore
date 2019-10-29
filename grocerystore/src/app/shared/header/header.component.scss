@@ -1,0 +1,10 @@
+.header {
+    text-align: center;
+    background: #fff;
+    height: 95px;
+	color: #888;
+
+    & .nav-item {
+        padding: 4px;
+    }
+}

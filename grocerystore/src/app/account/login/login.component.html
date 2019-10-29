@@ -1,0 +1,42 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <p *appUnless="errorFlag">
+    Please enter the missing details
+  </p>
+  <!--<p apperrorsdisplay [defaultColor] = "'transparent'" [errorColor]="'yellow'"> -->
+  <div class="form-group">
+    <label for="userName">User Name</label>
+    <input class="form-control"
+      type="text"
+      name="userName"
+      formControlName="userName"
+      id="userName"
+      #userNameInput
+    />
+    <span
+      *ngIf="
+        !loginForm.get('userName').valid && loginForm.get('userName').touched
+      "
+    >
+      Please enter user name.
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="labelPassword">Password</label>
+    <input class="form-control"
+      type="password"
+      name="password"
+      id="password"
+      #passwordInput
+      formControlName="password"
+    />
+    <span
+      *ngIf="
+        !loginForm.get('password').valid && loginForm.get('password').touched
+      "
+    >
+      Please enter password.
+    </span>
+  </div>
+  <input type="submit" name="login" id="login" class="submit" />
+  <div>{{ passwordInput.value | shorten: 5 }}</div>
+</form>

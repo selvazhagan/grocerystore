@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.navWrap {
+    background-color: #369;
+  
+    border-top: 5px solid #fc3;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  
+    & .nav-item {
+      padding: 7px;
+    }
+  
+    & a {
+      color: #fff;
+    }
+
+    & li {
+        list-style: none;
+    }
+  }
